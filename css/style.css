@@ -146,8 +146,76 @@ body {
 }
 .feature__logo--security {
     width: 55px;
+    margin: 0.25em;
 }
 
+/* PRODUCTIVE */
+
+.section--productive {
+    margin-top: 2.5em;
+}
+
+.productive-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.productive__hero-image {
+    width: 95%;
+}
+.productive__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 2em;
+}
+.productive__heading {
+    font-family:'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: left;
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+.productive__subheading {
+    text-align: left;
+    margin-top: 0;
+}
+.button--productive {
+    color: var(--cyan);
+    background-color: unset;
+    font-family:'Raleway', sans-serif;
+    font-weight: 400;
+    text-align: left;
+    /* width: 75%; */
+    border: none;
+    border-bottom: 1px solid var(--cyan);
+    padding: 0;
+}
+
+/* TESTIMONIALS */
+
+.testimonial {
+    background-color: var(--darkBlue4);
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.user__avatar {
+    width: 24px;
+    border-radius: 50%;
+}
+.user__name {
+    margin: 0;
+}
+.user__title {
+    margin: 0;
+}
 /* FOOTER */
 
 footer {
