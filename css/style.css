@@ -28,7 +28,7 @@ body {
     font-family:'Open Sans', sans-serif;
     font-weight: 400;
     color: var(--white);
-    background-color: var(--darkBlue1);
+    background-color: var(--darkBlue2);
     margin: 0;
 }
 
@@ -41,6 +41,10 @@ body {
     width: 100%;
     /* min-height: 1020px; */
     box-sizing: border-box;
+}
+
+.section {
+    padding: 2.5em 2em;
 }
 
 .header {
@@ -57,11 +61,91 @@ body {
     width: 100%;
     justify-content: space-between;
 }
-
+.nav--top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+    margin-top: 0.25rem;
+}
 .nav__logo {
+    height: 24px;
+}
+.nav__button {
+    color: var(--white);
+    background-color: unset;
+    border: none;
+    font-family:'Raleway', sans-serif;
+    font-weight: 400;
+    /* font-size: 11px; */
+    padding: .5rem;
 }
 
-.nav__button {
+/* HERO */
+
+.hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero__hero-image {
+    width: 95%;
+}
+.hero__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url(/images/bg-curvy-mobile.svg); */
+}
+.hero__heading {
+    font-family:'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.75em;
+    line-height: 1.5em;
+}
+.hero__subheading {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;   
+}
+.button--hero {
+    color: var(--white);
+    font-family:'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    width: 75%;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem;
+    background-image: linear-gradient(to right, var(--cyan), var(--blue)) ;
+}
+
+/* FEATURES */
+
+.feature {
+    padding: 2.25rem 0;
+    text-align: center;
+}
+.feature__heading {
+    font-family:'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.25em;
+}
+.feature__text {
+
+}
+.feature__logo {
+    width: 65px;
+    margin: 1em;
+}
+.feature__logo--security {
+    width: 55px;
 }
 
 /* FOOTER */
