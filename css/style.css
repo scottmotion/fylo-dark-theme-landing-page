@@ -256,7 +256,7 @@ body {
     background-color: var(--darkBlue1);
     margin: 1.5em;
     margin-top: 7rem;
-    margin-bottom: -5rem;
+    margin-bottom: -10.5rem;
     border-radius: 0.75rem;
 }
 
@@ -274,18 +274,41 @@ body {
     font-size: 1.25em;
     line-height: 1.5em;
     text-align: center;
-    margin: 0;
+    margin-top: 0.25em;
+    margin-bottom: 0;
 }
 .opt-in__text {
     line-height: 1.5;
     text-align: center;
+}
+.opt-in__email-input {
+    font-family:'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin: 1.75em 0;
+}
+.opt-in__button {
+    color: var(--white);
+    font-family:'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem;
+    background-image: linear-gradient(to right, var(--cyan), var(--blue)) ;
 }
 
 /* FOOTER */
 
 .footer {
     background-color: var(--darkBlue3);
-    padding-top: 5rem;
+    padding-top: 10rem;
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
