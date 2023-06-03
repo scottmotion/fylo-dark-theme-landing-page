@@ -136,9 +136,10 @@ body {
     font-family:'Raleway', sans-serif;
     font-weight: 700;
     font-size: 1.25em;
+    margin-bottom: 0;
 }
 .feature__text {
-
+    line-height: 1.5;
 }
 .feature__logo {
     width: 65px;
@@ -188,16 +189,43 @@ body {
     font-family:'Raleway', sans-serif;
     font-weight: 400;
     text-align: left;
-    /* width: 75%; */
     border: none;
     border-bottom: 1px solid var(--cyan);
-    padding: 0;
+    padding: 0.25em 0;
+}
+
+.button--productive:after {
+    content: url(/images/icon-arrow.svg);
+    margin-left: 0.5rem;
+    vertical-align: middle;
 }
 
 /* TESTIMONIALS */
+.section--testimonials {
+    padding: 2.5em 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 6rem;
+    background-image: url(/images/bg-quotes.png);
+    background-repeat: no-repeat;
+    background-size: 1.5em;
+    background-position-x: 3.5em;
+    background-position-y: 1.25em;
+}
 
 .testimonial {
     background-color: var(--darkBlue4);
+    border-radius: 4px;
+    padding: 1.5em;
+}
+.testimonial__text {
+    font-size: 11px;
+    line-height: 1.75;
+    margin-top: 0;
+    margin-bottom: 1.5em;
 }
 
 .user {
@@ -205,6 +233,7 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    gap: 0.75em;
 }
 .user__avatar {
     width: 24px;
@@ -212,14 +241,51 @@ body {
 }
 .user__name {
     margin: 0;
+    font-size: 11px;
 }
 .user__title {
     margin: 0;
+    font-size: 8px;
 }
+
+
+
+/* OPT-IN */
+
+.section--opt-in {
+    background-color: var(--darkBlue1);
+    margin: 1.5em;
+    margin-top: 7rem;
+    margin-bottom: -5rem;
+    border-radius: 0.75rem;
+}
+
+.opt-in__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.opt-in__heading {
+    font-family:'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: left;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    text-align: center;
+    margin: 0;
+}
+.opt-in__text {
+    line-height: 1.5;
+    text-align: center;
+}
+
 /* FOOTER */
 
-footer {
+.footer {
     background-color: var(--darkBlue3);
+    padding-top: 5rem;
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
