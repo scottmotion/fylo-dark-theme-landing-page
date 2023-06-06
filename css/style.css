@@ -22,6 +22,10 @@
 --white: hsl(0, 0%, 100%); /**/
 
 }
+* {
+    font-size: 14px;
+    line-height: 1.5em;
+}
 
 body {
     font-size: 14px;
@@ -75,7 +79,7 @@ body {
     border: none;
     font-family:'Raleway', sans-serif;
     font-weight: 400;
-    /* font-size: 11px; */
+    font-size: 12px;
     padding: .5rem;
 }
 
@@ -115,6 +119,7 @@ body {
 }
 .hero__hero-image {
     width: 100%;
+    max-width: 720px;
 }
 .hero__text-wrapper {
     display: flex;
@@ -132,6 +137,7 @@ body {
     margin-top: 1.25em;
     margin-bottom: 0.5em;}
 .hero__subheading {
+    line-height: 1.5em;
     text-align: center;
     margin-top: 0;
     margin-bottom: 2rem;
@@ -153,7 +159,7 @@ body {
 /* FEATURES */
 
 .feature {
-    padding: 2.25rem 0;
+    padding: 2.5rem 0;
     text-align: center;
 }
 .feature__heading {
@@ -173,11 +179,14 @@ body {
     width: 55px;
     margin: 0.25em;
 }
+.feature__logo--any-file {
+    width: 70px;
+}
 
 /* PRODUCTIVE */
 
 .section--productive {
-    margin-top: 2.5em;
+    margin-top: 3em;
 }
 
 .productive-wrapper {
@@ -206,6 +215,7 @@ body {
 .productive__subheading {
     text-align: left;
     margin-top: 0;
+    line-height: 1.5em;
 }
 .button--productive {
     color: var(--cyan);
@@ -231,8 +241,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
-    margin-top: 6rem;
+    gap: 1.75rem;
+    margin-top: 7rem;
     background-image: url(/images/bg-quotes.png);
     background-repeat: no-repeat;
     background-size: 1.5em;
@@ -279,8 +289,8 @@ body {
 .section--opt-in {
     background-color: var(--darkBlue1);
     margin: 1.5em;
-    margin-top: 7rem;
-    margin-bottom: -10.5rem;
+    margin-top: 8rem;
+    margin-bottom: -13rem;
     border-radius: 0.75rem;
 }
 
@@ -332,7 +342,7 @@ body {
 
 .footer {
     background-color: var(--darkBlue3);
-    padding-top: 12rem;
+    padding-top: 15rem;
 }
 .section--footer {
     display: flex;
@@ -343,6 +353,7 @@ body {
 }
 
 .footer__logo {
+    margin-bottom: 1em;
     margin-left: 1em;
 }
 .footer__contact {
@@ -365,17 +376,17 @@ body {
     margin-top: 0.25em;
 }
 .footer__location {
-    margin-bottom: 1.5em;
+    /* margin-bottom: 1.5em; */
     margin-top: 0;
     font-size: 1.1em;
 }
 .footer__phone {
-    margin-bottom: 1.5em;
+    /* margin-bottom: 1.5em; */
     margin-top: 0;
     font-size: 1.1em;
 }
 .footer__email {
-    margin-bottom: 1.5em;
+    /* margin-bottom: 1.5em; */
     margin-top: 0;
     font-size: 1.1em;
 }
@@ -407,3 +418,15 @@ body {
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+/* MEDIA QUERIES */
+@media (min-width: 40em) {
+
+}
+
+
+@media (min-width: 60em) {
+    .nav__logo {
+        height: 48px;
+    }
+}
