@@ -92,7 +92,7 @@ body {
 
 /* HERO */
 .section--hero-divider {
-    background-image: url(/images/bg-curvy-mobile.svg);
+    background-image: url(../images/bg-curvy-mobile.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -235,7 +235,7 @@ body {
 }
 
 .button--productive:after {
-    content: url(/images/icon-arrow.svg);
+    content: url(../images/icon-arrow.svg);
     margin-left: 0.5rem;
     vertical-align: middle;
 }
@@ -249,7 +249,7 @@ body {
     align-items: center;
     gap: 1.75rem;
     margin-top: 7rem;
-    background-image: url(/images/bg-quotes.png);
+    background-image: url(../images/bg-quotes.png);
     background-repeat: no-repeat;
     background-size: 1.5em;
     background-position-x: 3.5em;
