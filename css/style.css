@@ -164,6 +164,8 @@ body {
 .feature {
     padding: 2.5rem 0;
     text-align: center;
+    display: grid;
+    place-items: center;
 }
 .feature__heading {
     font-family:'Raleway', sans-serif;
@@ -173,6 +175,7 @@ body {
 }
 .feature__text {
     line-height: 1.5;
+    max-width: 44ch;
 }
 .feature__logo {
     width: 65px;
@@ -455,7 +458,15 @@ body {
         font-size: 16px;
     }
 
-
+    .hero-divider {
+        margin-top: 50%;
+    }
+    
+    
+    .section--hero {
+        margin-top: -50%;
+    }
+    
     .hero__heading {
         font-size: 2.75em;
         margin-top: 1em;
@@ -482,10 +493,10 @@ body {
     .feature {
         padding: 2rem 0;
     }
-    .feature__text {
+    /* .feature__text {
         line-height: 1.5;
         max-width: 44ch;
-    }
+    } */
     .feature__logo {
         width: 90px;
         margin: 1em;
@@ -566,6 +577,7 @@ body {
     /* FOOTER */
     .section--footer {
         grid-template-columns: 4fr 1fr 1fr 1fr;
+        padding: 2.5em 5.5em;
         /* grid-template-columns: 1fr 1fr 1fr 1fr; */
         /* display: flex;
         flex-direction: row;
@@ -578,13 +590,36 @@ body {
         grid-column-end: 5;
     }
     .footer__contact {
-        grid-template-columns: 2.5rem 1fr 2.5rem 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 2.5rem 1fr 2rem 2.5rem 1fr;
+        grid-template-areas: 
+        'logo1 contact1 gap logo2 contact2'
+        'logo1 contact1 gap logo3 contact3'
+        ;
+        grid-template-rows: auto 1fr;
     }
-    .footer__icon--location {
-        grid-row-start: 1;
-        grid-row-end: 3;
+    .footer__icon-location {
+        grid-area: logo1;
     }
+    .footer__location {
+        grid-area: contact1;
+    }
+    .footer__icon-phone {
+        grid-area: logo2;
+    }
+    .footer__phone {
+        grid-area: contact2;
+    }
+    .footer__icon-email {
+        grid-area: logo3;
+    }
+    .footer__email {
+        grid-area: contact3;
+    }
+
+    .footer__nav {
+        justify-content: start;
+    }
+
     .footer__social {
         margin-top: 0.75rem;
         margin-bottom: 0;
