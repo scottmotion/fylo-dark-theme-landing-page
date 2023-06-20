@@ -28,8 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://www.scottwinn.dev/demos/fylo-landing-page/)
+- Live Site URL: (https://www.scottwinn.dev/demos/fylo-landing-page/)
 
 ## My process
 
